@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sortcut icon" href="anco.png" type="image/x-icon" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        *,
+        html,
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <img src="http://www.rio.rj.gov.br/igstatic/11/46/55/11465516.png" alt="" width="200px"><br><br>
+
+    <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+    <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js" data-button-label="Comprar com Mercado Pago" data-preference-id='<%= global.id %>'>
+    </script>
+    </script>
+    <script>
+        $(document).ready(function() {
+
+
+            window.onload = function() {
+                if (!window.location.hash) {
+                    window.location = window.location + '#loaded';
+                    window.location.reload();
+                }
+            }
+
+            $('.mercadopago-button').click(function() {
+
+            })
+            console.log($('.row-summary__price').text())
+            if ($('.oops__message').text() == '') {
+
+            }
+
+            caches.delete(cacheName).then(function(boolean) {
+                // your cache is now deleted
+            });
+
+        })
+        window.Mercadopago.setPublishableKey("APP_USR-c70e8603-00f5-4166-8c61-7ca69f1b80dc");
+    </script>
+</body>
+
+</html>

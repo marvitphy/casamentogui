@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+
+    <link rel="sortcut icon" href="anco.png" type="image/x-icon" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gui e Karina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Site oficial do casamento de Guilherme & Karina" />
+    <meta name="keywords" content="casamento" />
+    <meta name="author" content="Marcos" />
+
+
+    <meta property="og:title" content="Site oficial - Casamento Guilherme & Karina" />
+    <meta property="og:image" content="images/img-topo.jpeg" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Casamento Guilherme & Karina" />
+    <meta property="og:description" content="Site oficial - Casamento Guilherme & Karina" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+    <style>
+        .main-nav {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            width: 600px;
+            height: 150px;
+        }
+        
+        .musga {
+            transition: 1.5s;
+            height: 33px;
+            border-radius: 10px;
+        }
+        
+        .musga:hover {
+            opacity: 100%;
+        }
+        
+        .main-nav li {
+            list-style: none;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: #000;
+            transform: rotate(45deg);
+            transition: 0.5s;
+            margin: -100px;
+            overflow: hidden;
+            opacity: 0.5;
+        }
+        
+        .main-nav li:hover {
+            opacity: 1;
+        }
+        
+        .main-nav li.item1 {
+            top: 0;
+            left: 0;
+        }
+        
+        .main-nav li.item2 {
+            bottom: 0;
+            left: 25%;
+        }
+        
+        .main-nav li.item3 {
+            top: 0;
+            left: 50%;
+        }
+        
+        .main-nav li.item4 {
+            bottom: 0;
+            left: 75%;
+        }
+        
+        .main-nav li.item5 {
+            top: 0;
+            left: 100%;
+        }
+        
+        .main-nav li .bg {
+            width: 100%;
+            height: 100%;
+            transform: scale(1.1);
+        }
+        
+        .main-nav li.item1 .bg {
+            background: url(https://imgur.com/ir9l1IJ.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .main-nav li.item2 .bg {
+            background: url(https://imgur.com/fwe8Z9Q.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .main-nav li.item3 .bg {
+            background: url(https://imgur.com/kSoRoDk.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .main-nav li.item4 .bg {
+            background: url(https://imgur.com/sz1BSkB.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .main-nav li.item5 .bg {
+            background: url(https://imgur.com/ara0hoV.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .sos {
+            width: 220px;
+        }
+        
+        #myVideo {
+            position: fixed;
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            transform: translateY(180px);
+            min-width: 100%;
+            min-height: 100%;
+            filter: brightness(50%);
+        }
+        
+        .bussola {
+            width: 180px;
+            margin-bottom: 30px;
+        }
+        
+        #ancora {
+            font-size: 30px;
+        }
+        
+        .onda {
+            width: 100px;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .gui {
+                transform: translateY(-50px);
+            }
+            #teste {
+                display: none;
+            }
+            .onda {
+                width: 20px;
+            }
+            .sos {
+                width: 160px;
+                transform: translateY(-85px);
+            }
+            .bussola {
+                width: 100px;
+                transform: translateY(25px);
+            }
+            #myVideo {
+                position: fixed;
+                z-index: -1;
+                right: 0;
+                bottom: 0;
+                transform: translateY(-100px);
+                min-width: 100%;
+                min-height: 100%;
+                filter: brightness(50%);
+                transform: translateX(120px);
+            }
+            #ancora {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="fh5co-loader"></div>
+
+    <div id="page">
+        <nav class="fh5co-nav" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2" style="transform: tralsteX(-120px)">
+                        <div id="fh5co-logo"><a style=" font-size:" href="index.html">Guilherme & Karina
+                            
+                        </a>
+
+                        </div>
+
+                    </div>
+                    <div class="col-xs-10 text-right menu-1">
+                        <ul>
+                            <li class="active"><a href="index.html">Início</a></li>
+                            <li><a href="/sos">S.O.S. LUA DE MEL</a></li>
+                            <li class="has-dropdown">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <video autoplay muted loop id="myVideo">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        <header id="fh5co-header" class="fh5co-cover" role="banner" style="" data-stellar-background-ratio="0.5">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <div class="display-t">
+
+                            <div class="display-tc animate-box" data-animate-effect="fadeIn" id="teste">
+                                <br><br>
+                                <h1 class="gui">Guilherme <i id="ancora" class="fas fa-anchor"></i> Karina</h1>
+
+                                <div style="transform: translateY(-40px); color: white; text-align: left; margin "> </div>
+
+
+                                <div class="simply-countdown simply-countdown-one"></div>
+                                <a href="/sos">
+                                    <p> <img src="images/sos.png" class="sos" alt=""> </p>
+                                </a><br>
+                                <img src="images/c.png" class="bussola" alt=""> <br>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="fh5co-couple" style="background: white;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+                        <h2>Um pouco sobre a gente</h2>
+                        <p>Te convidamos para essa data incrível e marcante na nossa história</p>
+                        <audio class="musga" controls autoplay loop>
+                            <source src="vida.mp3" type="audio/mp3" >
+                          Your browser does not support the audio element.
+                          </audio>
+                    </div>
+                </div>
+                <div class="couple-wrap animate-box">
+                    <div class="couple-half">
+                        <div class="groom">
+                            <img src="images/img3.jpeg" alt="groom" class="img-responsive">
+                        </div>
+                        <div class="desc-groom">
+                            <h3>Guilherme</h3>
+                            <p>O casamento é um de um laço de amor. Um laço que deve ser leve como um abraço, não apertado como um nó, mas firme o suficiente para não se desfazer com o vento.</p>
+                        </div>
+                    </div>
+                    <p class="heart text-center"><i class="fas fa-anchor"></i></p>
+                    <div class="couple-half">
+                        <div class="bride">
+                            <img src="images/img4.jpeg" alt="groom" class="img-responsive">
+                        </div>
+                        <div class="desc-bride">
+                            <h3>Karina</h3>
+                            <p>O casamento deve ser feito de amor, de respeito e admiração. Deve sobreviver ao fim da paixão, a tormentas e qualquer tipo de tentação. Num casamento deve haver diálogo, não discussão. O importante não é saber quem tem razão,
+                                mas encontrar um consenso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fh5co-event" class="mb-3 fh5co-bg" style="background-image:url(images/img_bg_3.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+                        <span>Nossos eventos especiais</span>
+                        <h2>Eventos no Casamento</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="display-t ">
+                        <div class="display-tc ">
+                            <div class="col col-md-offset-1">
+                                <div class="col-md-6 col-sm-6 text-center">
+                                    <div class="event-wrap animate-box">
+                                        <h3>Cerimônia Principal</h3>
+                                        <div class="event-col">
+                                            <i class="icon-clock"></i>
+                                            <span>16:00 Hrs</span>
+                                        </div>
+                                        <div class="event-col">
+                                            <i class="icon-calendar"></i>
+                                            <span>01/05/2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AQUI -->
+        <!-- AQUI -->
+        <!-- AQUI -->
+        <br>
+
+        <!-- <ul class="main-nav">
+            <li class="item1">
+                <div class="bg"></div>
+            </li>
+            <li class="item2">
+                <div class="bg"></div>
+            </li>
+            <li class="item3">
+                <div class="bg"></div>
+            </li>
+            <li class="item4">
+                <div class="bg"></div>
+            </li>
+            <li class="item5">
+                <div class="bg"></div>
+            </li>
+        </ul> -->
+
+        <div id="fh5co-gallery" class="fh5co-section-gray" style="background: white;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+                        <span>Nossas <i style="font-size: 18px"class="fas fa-compass"></i> Memórias</span>
+                        <h2 style="color:#52B8AD"><img src="images/onda.png" class="onda" alt=""> Galeria do Casal <img src="images/onda.png" class="onda" width="100px" alt=""></h2>
+                    </div>
+                </div>
+                <div class="row row-bottom-padded-md">
+                    <div class="col-md-12">
+                        <ul id="fh5co-gallery-list">
+
+                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/galeria1.jpg); ">
+                                <a href="images/galeria1.jpg">
+
+                                </a>
+                            </li>
+                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/galeria2.jpg); ">
+                                <a href="#" class="color-2">
+
+                                </a>
+                            </li>
+
+
+                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/galeria3.jpg); ">
+                                <a href="#" class="color-3">
+
+                                </a>
+                            </li>
+                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/galeria4.jpg); ">
+                                <a href="#" class="color-4">
+
+                                </a>
+                            </li>
+
+                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/galeria5.jpg); ">
+                                <a href="#" class="color-3">
+
+                                </a>
+                            </li>
+                            <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/galeria6.jpg); ">
+                                <a href="#" class="color-4">
+
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div id="fh5co-testimonial">
+            <div class="container">
+                <div class="row">
+                    <div class="row animate-box">
+                        <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                            <span>Comentários de</span>
+                            <h2 style="color:#52B8AD"><img src="images/onda.png" width="100px" alt=""> Amigos e Familiares <img src="images/onda.png" width="100px" alt=""></h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 animate-box">
+                            <div class="wrap-testimony">
+                                <div class="owl-carousel-fullwidth">
+                                    <div class="item">
+                                        <div class="testimony-slide active text-center">
+                                            <figure>
+                                                <img src="images/couple-1.jpg" alt="user">
+                                            </figure>
+                                            <span>Marta</span>
+                                            <blockquote>
+                                                <p>"Texto TextoTexto TextoTexto TextoTexto TextoTexto TextoTexto TextoTexto TextoTexto TextoTexto Texto"</p>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="testimony-slide active text-center">
+                                            <figure>
+                                                <img src="images/couple-2.jpg" alt="user">
+                                            </figure>
+                                            <span>Carla Santos</span>
+                                            <blockquote>
+                                                <p>"Texto TextoTexto TextoTexto TextoTexto TextoTexto TextoTexto TextoTexto TextoTexto TextoTexto TextoTexto TextoTexto TextoTexto Texto"</p>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="testimony-slide active text-center">
+                                            <figure>
+                                                <img src="images/couple-3.jpg" alt="user">
+                                            </figure>
+                                            <span>Erick Silva</span>
+                                            <blockquote>
+                                                <p>"Texto TextoTexto TextoTexto TextoTexto TextoTexto TextoTexto TextoTexto TextoTexto TextoTexto TextoTexto TextoTexto Texto"</p>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+
+
+
+        <footer id="fh5co-footer" role="contentinfo" style="background: white;">
+            <div class="container">
+
+                <div class="row copyright">
+                    <div class="col-md-12 text-center">
+                        <p>
+                            <small class="block">&copy; 2021 Casamento Guilherme & Karina.</small>
+                        </p>
+                        <p>
+                            <ul class="fh5co-social-icons">
+                                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                <li><a href="#"><i class="icon-facebook"></i></a></li>
+                                <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                                <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- countTo -->
+    <script src="js/jquery.countTo.js"></script>
+
+    <!-- Stellar -->
+    <script src="js/jquery.stellar.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+
+    <!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+    <script src="js/simplyCountdown.js"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
+    <script>
+    </script>
+
+
+</body>
+
+</html>
